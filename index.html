@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>MoneyFlow</title>
+<meta name="description" content="MoneyFlow — простий облік доходів, витрат, цілей і кредитів. Дані зберігаються лише на телефоні та шифруються.">
+<meta name="theme-color" content="#F3F5F9">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="MoneyFlow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app"><main id="app"></main></div>
+<nav id="nav" class="tabs hidden" aria-label="MoneyFlow"></nav>
+<div id="ob" class="ob hidden"></div>
+<div id="lock" class="lock"></div>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+<noscript><p class="fatal">MoneyFlow needs JavaScript.</p></noscript>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
